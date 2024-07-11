@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-web-regi
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: web
+  resources:
+    requests:
+      storage: 2Gi
+
