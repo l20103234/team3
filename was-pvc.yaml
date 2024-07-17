@@ -8,5 +8,5 @@ spec:
   storageClassName: was
   resources:
     requests:
-      storage: 5Gi
+      storage: 30Gi
 
