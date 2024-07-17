@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-web
+spec:
+  type: NodePort
+  clusterIP: 10.100.120.1
+  ports:
+  - port: 80
+    targetPort: 80
+    nodePort: 30100
+  selector:
+    app: web
+
