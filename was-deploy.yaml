@@ -23,7 +23,7 @@ spec:
       nodeSelector:
         type: was
       containers:
-      - image: soonge97/was:v7.1
+      - image: wonjong9504/was:v17.4
         name: was
         ports:
         - containerPort: 8080
