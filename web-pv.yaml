@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-web
+spec:
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - ReadWriteMany
+  storageClassName: web
+  persistentVolumeReclaimPolicy: Retain
+  hostPath:
+    path: /mnt/data/web
